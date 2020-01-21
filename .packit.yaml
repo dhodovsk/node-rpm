@@ -1,0 +1,7 @@
+specfile_path: nodejs.spec
+jobs:
+- job: copr_build
+  trigger: pull_request
+  metadata:
+    targets:
+      - epel-7-x86_64
